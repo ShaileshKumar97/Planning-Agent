@@ -1,4 +1,5 @@
 import json
+import os
 from datetime import datetime
 from typing import Literal
 
@@ -24,7 +25,10 @@ from utils.token_counter import should_compress
 
 def get_llm():
     return ChatOpenAI(
-        model="gpt-oss-120b", base_url="https://api.cerebras.ai/v1", temperature=0.7
+        model="gpt-oss-120b",
+        base_url="https://api.cerebras.ai/v1",
+        api_key=os.getenv("CEREBRAS_API_KEY"),
+        temperature=0.7,
     )
 
 
