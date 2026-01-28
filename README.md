@@ -1,3 +1,14 @@
+---
+title: Planning Agent
+emoji: 📚
+colorFrom: blue
+colorTo: green
+sdk: streamlit
+sdk_version: "1.53.1"
+app_file: app.py
+pinned: false
+---
+
 # Planning Agent
 
 A conversational planning agent built with LangGraph and Streamlit that helps users create and refine plans through natural dialogue.
